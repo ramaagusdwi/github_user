@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.githubuser.R
 import com.example.githubuser.models.User
@@ -56,7 +57,7 @@ class GithubUserAdapter(
 
 
 
-        holder.linearLayout1.setOnClickListener {
+        holder.constraintLayout.setOnClickListener {
             val activity = holder.itemView.context as Activity
             val intentDetail =
                 Intent(activity, DetailGithubUsersActivity::class.java)
@@ -77,7 +78,7 @@ class GithubUserAdapter(
         val imageView: ImageView = itemView.findViewById(R.id.imageView)
         val textView: TextView = itemView.findViewById(R.id.textView)
         val textView2: TextView = itemView.findViewById(R.id.textView2)
-        val linearLayout1: LinearLayout =
-            itemView.findViewById(R.id.linearLayout1)
+        val constraintLayout: ConstraintLayout =
+            itemView.findViewById(R.id.constraintLayout1)
     }
 }
