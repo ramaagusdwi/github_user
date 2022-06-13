@@ -44,6 +44,11 @@ class DetailGithubUsersActivity : AppCompatActivity() {
         val iv_avatar: ImageView = findViewById(R.id.iv_avatar)
         iv_avatar.setImageDrawable(res)
 
+        val tvUsername: TextView = findViewById(R.id.tv_user_name)
+        tvUsername.text = users.username.toString()
+
+        val tvName: TextView = findViewById(R.id.tv_name)
+        tvName.text = users.name.toString()
 
         val tvRepo: TextView = findViewById(R.id.tv_repositories)
         tvRepo.text = users.repository.toString()
